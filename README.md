@@ -27,6 +27,8 @@ Ensure the Synthesis for the target design is complete, and then open a terminal
 • For Innovus tool, a GUI opens, and the terminal also enters the Innovus command prompt, where the tool commands can be entered. 
 
 After importing the Design, Perform the following Physical Design stages:
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/66cc6eb8-7bba-45e4-9ffe-f11affce8e21" />
+
 
 → Floor Planning 
 
@@ -38,16 +40,22 @@ Note : Check the paths to properly read in the input files.
 •	Else, if you would like to import your design using GUI, open the Innovus tool and from the GUI, go to File → Import Design.
 
 o	A new pop-up window appears. 
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/1ac1ea7f-cd30-459f-a84a-5f9ad7d5f051" />
+
 
 o	First, load the netlist. You can browse for the file and select “Top cell : Auto Assign”.
 
 •	Similarly, select your LEF files from the specified path.
 
 •	Once LEF Files are loaded, Next step is to create the power supply pins both VDD and VSS
+<img width="722" height="467" alt="image" src="https://github.com/user-attachments/assets/9c1f6838-c3ac-4be4-9420-5eb5292c20d3" />
+
 
 •	In order to load the Liberty File and SDC, create delay corners and analysis view, select the “Create Analysis Configuration” option at the bottom.
 
 o	An MMMC browser Pops Up.
+<img width="819" height="670" alt="image" src="https://github.com/user-attachments/assets/1751cbec-93a5-48da-bab2-c706853af0ec" />
+
 
 <img width="819" height="670" alt="image" src="https://github.com/user-attachments/assets/12b66c0e-44d0-437e-878e-7620932e7edd" />
 
@@ -68,18 +76,26 @@ In order to add any of the objects, make a right click on the corresponding labe
 Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 
 • add slow.lib with a label Slow or any identifier of your own.
+<img width="754" height="476" alt="image" src="https://github.com/user-attachments/assets/abb7c467-7530-4eaa-8308-8e6e085eec7d" />
+
 
 ### Fig.1 Add slow Library set
 
 • add fast.lib with a label Fast or any identifier of your own.
+<img width="942" height="592" alt="image" src="https://github.com/user-attachments/assets/068313bd-3b8d-4bc6-889e-e5f5d870a1ab" />
+
 
 ### Fig.2 Add fast Library set
 
 • Adding RC Corners can also be done in a similar process. The temperature value can be found under the corresponding liberty file. Also, cap table and RC Tech files can be added from Foundry where available.
 
 ### Fig.3 Add RC corner
+<img width="819" height="670" alt="image" src="https://github.com/user-attachments/assets/9d576f95-c88f-4f00-b9f9-f299567454b9" />
+
 
 • Delay Corners are formed by combining Library Sets with RC Corners.
+<img width="453" height="376" alt="image" src="https://github.com/user-attachments/assets/278e7b11-34d2-4a9f-9fab-c4ea946a18c5" />
+
 
 ### Fig.4 Add Delay corner Max_delay & Min_delay
 
@@ -94,6 +110,8 @@ Adding Liberty Files (slow.lib, fast.lib) under “Library Sets
 • Once “Best” and “Worst” Analysis views are created, assign them to Setup and Hold.
 
 ### Fig.7 Add Setup Analysis View & Hold Analysis View
+
+<img width="829" height="504" alt="image" src="https://github.com/user-attachments/assets/28030654-4209-4024-b4f3-9c4adf5da525" />
 
 • Once all the process is done, Click on “Save&Close” and save the script generated with any name of your choice. 
 
@@ -132,6 +150,7 @@ In the Import Design window click the save option to save the Default.globals fi
 • The Yellow patch on the Left Bottom are the group of “Unassigned pins” which are to be  placed along the IO Boundary along with the Standard Cells [Gates].
 
 #### → Power Planning
+
 
 #### Steps under Power Planning : 
 
@@ -172,10 +191,13 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
 
 ### Fig.10 Power plan 
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7ac29426-d351-4d2b-bf66-39a96cefcef6" />
 
 The complete Power Planning process makes sure Every Standard Cell receives enough power to operate smoothly.
 
 #### → Placement 
+<img width="1600" height="880" alt="image" src="https://github.com/user-attachments/assets/f38d317c-efe7-43a0-9af9-110de16932e2" />
+
 
 1. The Placement stage deals with Placing of Standard Cells as well as Pins.
     
@@ -188,5 +210,7 @@ The complete Power Planning process makes sure Every Standard Cell receives enou
 • You can toggle the Layer Visibility from the list on the Right. The List of Layers available are shown on the right under “Layer” tab with colour coding.
 
 ## Result
+<img width="1600" height="897" alt="image" src="https://github.com/user-attachments/assets/56d0f798-f950-47ae-997e-a8f675dca0cb" />
+
 
 Thus, the physical design stages up to placement for the 4-bit up-down counter were completed and verified.

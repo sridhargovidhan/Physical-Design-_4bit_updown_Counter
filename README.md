@@ -191,7 +191,7 @@ Under Connect Global Net Connects, we create two pins, one for VDD and one for V
 • After the Special Route is complete, all the Standard Cell Rows turn to the Color coded for Metal 1 
 
 ### Fig.10 Power plan 
-<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/7ac29426-d351-4d2b-bf66-39a96cefcef6" />
+<img width="1673" height="940" alt="image" src="https://github.com/user-attachments/assets/a7f36bbc-2a9d-4bff-aad4-030418829680" />
 
 The complete Power Planning process makes sure Every Standard Cell receives enough power to operate smoothly.
 
